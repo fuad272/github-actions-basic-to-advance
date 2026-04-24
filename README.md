@@ -1,51 +1,79 @@
-# GitHub Actions Basic to Advance
+# GitHub Actions: Basic to Advanced
 
-This repository contains three practical examples of GitHub Actions workflows—ranging from basic to advanced—designed to help you learn how to create automation pipelines using different GitHub Actions features.
+This repository is a comprehensive learning resource for GitHub Actions, containing multiple practical examples and workflows that demonstrate automation techniques ranging from basic to advanced levels.
 
----
+## 📋 Repository Structure
 
-## 📘 Workflow Examples
+```
+.github/
+├── workflows/          # GitHub Actions workflow definitions
+│   ├── basic_1.yaml
+│   ├── basic_2.yaml
+│   ├── medium.yaml
+│   ├── advanced_1.yaml
+│   ├── advanced_2.yaml
+│   └── reusable-simple.yaml
+└── actions/            # Custom GitHub Actions
+    ├── composite/      # Composite actions combining multiple actions
+    ├── js-actions/     # JavaScript-based custom actions
+    └── jenkins-python-actions/  # Jenkins integration with Python
+docs/
+├── Osama_GitHub_Actions.pdf    # Comprehensive GitHub Actions documentation
+```
 
-### 1. Basic – Single Job with Multiple Event Triggers
+## Workflow Examples
 
-This example demonstrates how to create a workflow with a **single job** triggered by multiple events such as:
-- `push`
-- `pull_request`
-- `issues`
+### 🟢 Basic Workflows
 
-📁 File: `.github/workflows/basic.yml`
+**Files:** `basic_1.yaml`, `basic_2.yaml`
 
-> Useful for: Simple CI tasks, like running tests or linting on code pushes or pull requests.
-
-
-### 2. Medium – Workflow Dispatch and Scheduled Cron Job
-
-This workflow uses:
-- `workflow_dispatch` for manual triggering via the GitHub UI
-- `schedule` for automatic execution based on a **cron schedule**
-
-📁 File: `.github/workflows/medium.yml`
-
-> Useful for: Running recurring tasks such as backups, cleanups, or report generation.
-
-
-### 3. Advanced – Docker Container, JavaScript, and Composite Actions
-
-A more sophisticated setup combining:
-- **Docker container** as the job environment
-- **JavaScript GitHub Action** to run a custom script
-- **Composite Action** for compilling multiple actions
-
-📁 File: `.github/workflows/advanced.yml`  
-Custom Actions:
-- JavaScript Action: `js-actions/`
-- Composite Action: `actions/composite/`
-
-> Useful for: Building modular, maintainable, and portable CI/CD workflows.
+Simple workflow examples demonstrating:
+- Triggering on `push`, `pull_request`, and `issues` events
+- Using GitHub Action secrets
+- `schedule` with cron expressions for automated recurring tasks
+- Multiple jobs and dependencies
 
 
-## 🚀 How to Use
+> **Use case:** Getting started with GitHub Actions, running basic CI tasks like tests and linting.
 
-1. Clone this repo:  
+### 🟡 Medium Workflows
+
+**File:** `medium.yaml`
+
+Intermediate workflow examples featuring:
+- `workflow_dispatch` for manual triggering via GitHub UI
+
+
+> **Use case:** Running tasks that requires input such as a Python script
+
+### 🔴 Advanced Workflows
+
+**Files:** `advanced_1.yaml`, `advanced_2.yaml`
+
+Sophisticated workflows combining:
+- **Docker containers** as job environments
+- **JavaScript GitHub Actions** for custom scripting
+- **Composite Actions** for reusable action combinations
+- **Reusable workflows** for DRY principles
+
+**Custom Actions:**
+- `js-actions/` - JavaScript-based custom action
+- `composite/` - Composite action bundling multiple steps
+- `jenkins-python-actions/` - Jenkins integration with Python
+
+> **Use case:** Building modular, maintainable, scalable CI/CD pipelines with reusable components.
+
+
+## Getting Started
+
+1. Fork and clone this repository:
    ```bash
-   git clone https://github.com/your-username/GitHub-Actions-Basic-To-Advanced.git
+   git clone https://github.com/your-username/github-actions-basic-to-advance.git
+   cd github-actions-basic-to-advance
+   ```
+2. Explore the workflows in `.github/workflows/` to understand different automation patterns
+
+3. Review the custom actions in `.github/actions/` to learn how to create reusable components
+
+4. Check the `docs/Osama_GitHub_Actions.pdf` for comprehensive documentation
+---
