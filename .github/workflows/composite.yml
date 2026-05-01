@@ -11,7 +11,7 @@ jobs:
       - name: Run Composite Action Saptarshi666
         uses: Saptarshi666/github-actions-basic-to-advance/.github/actions/composite@main
 
-      - name: Run Composite Action gemma2
+      - name: Run Composite Action gemma
         uses: bgerelmaa/github-actions-basic-to-advance/.github/actions/composite@main
 
       - name: Run Composite Action kooroshsajadi
