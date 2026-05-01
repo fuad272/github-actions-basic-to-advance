@@ -8,5 +8,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run Composite Action
+      - name: Run Composite Action gemma
         uses: bgerelmaa/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
+      - name: Run Composite Action kooroshsajadi
+        uses: kooroshsajadi/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
+      - name: Run Composite Action Saptarshi666
+        uses: Saptarshi666/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
