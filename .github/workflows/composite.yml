@@ -9,10 +9,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Composite Action Saptarshi666
-        uses: Saptarshi666/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
+        uses: Saptarshi666/github-actions-basic-to-advance/.github/actions/composite@main
 
       - name: Run Composite Action gemma2
-        uses: bgerelmaa/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
+        uses: bgerelmaa/github-actions-basic-to-advance/.github/actions/composite@main
 
       - name: Run Composite Action kooroshsajadi
-        uses: kooroshsajadi/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
+        uses: kooroshsajadi/github-actions-basic-to-advance/.github/actions/composite@main
