@@ -8,7 +8,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run Composite Action gemma
+      - name: Run Composite Action gemma2
         uses: bgerelmaa/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
       - name: Run Composite Action kooroshsajadi
         uses: kooroshsajadi/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
