@@ -1,0 +1,12 @@
+name: composite.yml
+on: push
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Composite Action
+        uses: bgerelmaa/github-actions-basic-to-advance/blob/main/.github/actions/composite/action2
