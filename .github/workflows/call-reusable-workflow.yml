@@ -2,7 +2,7 @@ name: call-reusable-workflow
 on: push
 
 jobs:
+  call-resusableSaptarshi:
+    uses: Saptarshi666/github-actions-basic-to-advance/.github/workflows/mj.yml@main
   call-reusable-workflow:
-    uses: Saptarshi666/github-actions-basic-to-advance/.github/workflows/resusableSaptarshi.yml@main
-  call-reusable-workflow2:
     uses: bgerelmaa/github-actions-basic-to-advance/.github/workflows/reusable-workflow.yml@main
