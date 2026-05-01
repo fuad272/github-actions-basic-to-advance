@@ -1,0 +1,9 @@
+name: call-reusable-workflow
+on:push:
+  branches:
+    - main
+
+jobs:
+  call-reusable-workflow:
+    uses: Saptarshi666/github-actions-basic-to-advance/.github/workflows/composite.yml@main
+
