@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Composite Action
-        uses: bgerelmaa/github-actions-basic-to-advance/blob/main/.github/actions/composite/action2@main
+        uses: bgerelmaa/github-actions-basic-to-advance/blob/main/.github/actions/composite@main
