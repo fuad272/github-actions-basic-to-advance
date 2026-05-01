@@ -5,4 +5,4 @@ jobs:
   call-resusableSaptarshi:
     uses: Saptarshi666/github-actions-basic-to-advance/.github/workflows/mj.yml@main
   call-reusable-workflow:
-    uses: bgerelmaa/github-actions-basic-to-advance/.github/workflows/reusable-workflow.yml@main
+    uses: bgerelmaa/github-actions-basic-to-advance/.github/workflows/reusable-workflow.yaml@main
